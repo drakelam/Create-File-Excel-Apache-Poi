@@ -8,7 +8,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 public class ExcelModifier {
-    private static final String SAMPLE_XLSX_FILE_PATH = "./employee.xlsx";
+    private static final String SAMPLE_XLSX_FILE_PATH = "./thongtinbaihat.xlsx";
 
     public static void main(String[] args) throws IOException, InvalidFormatException {
      

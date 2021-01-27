@@ -6,15 +6,15 @@ public class Thongtinbaihat {
     private String name;
     private String song;
     private Date NgaySinh;
-    private double daysOfWork;
-    private double salaryPerDay;
+    private double BXH;
+    private double DanhGia;
 
-    public Thongtinbaihat(String name, String song, Date time, double daysOfWork, double salaryPerDay) {
+    public Thongtinbaihat(String name, String song, Date NgaySinh, double BXH, double DanhGia) {
         this.name = name;
         this.song = song;
         this.NgaySinh = NgaySinh;
-        this.daysOfWork = daysOfWork;
-        this.salaryPerDay = salaryPerDay;
+        this.BXH = BXH;
+        this.DanhGia = DanhGia;
     }
 
     public String getName() {
@@ -41,20 +41,20 @@ public class Thongtinbaihat {
         this.NgaySinh = NgaySinh;
     }
 
-    public double getDaysOfWork() {
-        return daysOfWork;
+    public double getBXH() {
+        return BXH;
     }
 
-    public void setDaysOfWork(double daysOfWork) {
-        this.daysOfWork = daysOfWork;
+    public void setDaysOfWork(double BXH) {
+        this.BXH = BXH;
     }
 
-    public double getSalaryPerDay() {
-        return salaryPerDay;
+    public double getDanhGia() {
+        return DanhGia;
     }
 
-    public void setSalaryPerDay(double salaryPerDay) {
-        this.salaryPerDay = salaryPerDay;
+    public void setDanhGia(double DanhGia) {
+        this.DanhGia = DanhGia;
     }
 
 }

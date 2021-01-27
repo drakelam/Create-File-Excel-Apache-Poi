@@ -12,14 +12,14 @@ import java.util.Calendar;
 import java.util.List;
 
 public class ExcelWriter {
-    private static String[] columns = {"Name", "Song", "NgaySinh", "Days of work", "Salary Per Day", "Total Salary"};
+    private static String[] columns = {"Tên ca sĩ", "tên bài hát", "Ngay Sinh", "BXH", "Đánh giá", "Total Salary"};
     private static List<Thongtinbaihat> thongtinbaihat = new ArrayList<>();
 
     static {
         Calendar NgaySinh = Calendar.getInstance();
-        NgaySinh.set(1995, 0, 8); 
+        NgaySinh.set(2001, 0, 26); 
         thongtinbaihat.add(new Thongtinbaihat("Lâm Định", "ok", NgaySinh.getTime(), 22d, 100d));
-        NgaySinh.set(1998, 2, 15);
+        NgaySinh.set(2001, 2, 15);
         thongtinbaihat.add(new Thongtinbaihat("Mạnh hùng", "ok", NgaySinh.getTime(), 21d, 120d));
     }
 
@@ -70,11 +70,11 @@ public class ExcelWriter {
 
             //(Column D)
             row.createCell(3, CellType.NUMERIC)
-                    .setCellValue(thongtinbaihat.getDaysOfWork());
+                    .setCellValue(thongtinbaihat.getBXH());
 
             // (Column E)
             row.createCell(4, CellType.NUMERIC)
-                    .setCellValue(thongtinbaihat.getSalaryPerDay());
+                    .setCellValue(thongtinbaihat.getDanhGia());
 
             //  (Column F = D * E)
             String formula = "D" + rowNum + " * E" + rowNum;
